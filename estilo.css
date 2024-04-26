@@ -1,0 +1,106 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Workbench&display=swap');
+
+:root{
+    --cor-de-fundo: #1e1e1e;
+    --verde: #6fff57;
+    --branco: #fff;
+    --botao-ativo: #3a375e;
+    --botao-inativo: rgba(60,55,95,0.5);
+    --texto-fundo: rgba(60,55,95, 0.3);
+}
+.texto{
+    width: 1000px;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    text-align: center;
+}
+h1{
+    font-family: "Jacquard 24", system-ui;
+    font-size: 60px;
+}
+span{
+    color: var(--verde);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.botoes{
+   display: flex;
+}
+.botao{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+    padding: 1em;
+
+}
+.botao:hover{
+    background: blue;
+    color: yellow;
+}
+.botao:first-child{
+    border-radius: 40px 0 0 0;
+}
+.botao:last-child{
+    border-radius: 0 40px 0 0;
+}
+.botao.ativo{
+    background: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde); 
+}
+.secundario{
+    background: var(--texto-fundo);
+    padding: 30px;
+    border-radius: 0 0 40px 40px;
+}
+.conteudo.ativo {
+    display: block;
+}
+.conteudo {
+    display: none;
+}
+.conteudo-principal{
+    font-size: 32px;
+    text-align: center;
+}
+.conteudo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+}
+
+.digito {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dias, .minutos, .horas, .segundos{
+    color: var(--verde);
+}
